@@ -499,7 +499,13 @@ def rec_count(number):
 
 rec_count(6) # one thing to notice is that an outer call cannot move forward until all the inner recursive calls have finished.
 
+# LOOPS:
+# A loop is a Control Structure that is used to perform a set of instructions for a specific number of times.
 
+# For loop:
+''' A for loop uses an iterator to traverse a sequence, e.g. a range of numbers, the elements of a list, etc. In simple terms,
+the iterator is a variable that goes through the list.
 
+The iterator starts from the beginning of the sequence. In each iteration, the iterator updates to the next value in the sequence.
 
-
+The loop ends when the iterator reaches the end.'''
