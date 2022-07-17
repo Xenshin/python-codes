@@ -509,3 +509,4 @@ the iterator is a variable that goes through the list.
 The iterator starts from the beginning of the sequence. In each iteration, the iterator updates to the next value in the sequence.
 
 The loop ends when the iterator reaches the end.'''
+
