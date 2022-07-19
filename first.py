@@ -510,3 +510,83 @@ The iterator starts from the beginning of the sequence. In each iteration, the i
 
 The loop ends when the iterator reaches the end.'''
 
+# Looping through a Range
+for i in range(1,11): # A sequence from 1 to 10
+    if i%2 == 0:
+        print(i,"is even")
+    else:
+        print(i,"is odd")
+
+# Looping through a List/String
+# let's double each value in a list using a for loop
+float_list = [2.5, 16.42, 10.77, 8.3, 34.21]
+print(float_list)
+for i in range(0, len(float_list)):
+    float_list[i] = float_list[i]*2
+
+print(float_list)
+count_greater = 0
+
+for i in float_list:
+    if i > 10:
+        count_greater += 1
+
+print(count_greater)
+
+# Nested For Loop
+# Lets print two elements between 1 to 100 whose sum is equal to certain number n
+n = 143
+for n1 in range(0,101):
+    for n2 in range(0,101):
+        if(n1 + n2 == n):
+            print(n1,n2)
+
+
+# The Break keyword
+'''Sometimes we need to exit the loop before it reaches the end. This can happen
+if we found what we were looking for and don't need to make any more computations in the loop'''
+
+n = 143
+found = False
+for n1 in range(0,101):
+    for n2 in range(0,101):
+        if(n1+n2==n): 
+            found = True
+            break
+    if found:
+        print(n1,n2)
+        break   
+
+# The Continue keyword
+'''When the continue keyword is used, the rest of that particular iteration is skipped.
+The loop continues on to the next iteration. we can say that it doesn't break the loop, but 
+it skips all the code in the current iteration and moves on the next one'''
+
+num_list = list(range(0,10))
+
+for i in num_list:
+    if i == 3 or i == 6 or i == 8:
+        continue # this code will skip 3, 6, and 8
+    print(i) # will print all the other elements of the list
+
+# The Pass Keyword
+'''In all practical meaning, the pass statement does nothing to the code execution.
+It can be used to represent an area of code that needs to be written. Hence, it is 
+simply there to assist you when you haven't written a piece of code but still want
+your entire program to execute.'''
+
+num_list = list(range(0,20))
+
+for i in num_list:
+    pass # you can write code later on to use this loop
+
+print(len(num_list))
+
+# Finding a number
+for i in range(0,10):
+    if i == 89:
+        print('number found') # just a random example
+        break
+else:
+    print('number not found')
+
