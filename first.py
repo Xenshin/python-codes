@@ -590,3 +590,29 @@ for i in range(0,10):
 else:
     print('number not found')
 
+
+# The While loop
+'The While loop keeps iterating over a certain set of operations as long as a certain condition holds True'
+
+# Logic - While this condition is true, keep the loop running
+
+# this finds out the maximum power of n before the value exceeds 1000
+n = 2 # could be any number
+power = 0
+val = n
+while val < 1000:
+    power += 1
+    val *= n
+print(power)
+
+# sum of the first and last digit of any integer
+n = 248
+last = n%10 # finding the last digit is easy
+first = n # set it to n initially
+while first >= 10:
+    first //=10 # keep dividing by 10 untill the leftmost digit is reached
+    # it will give (2)
+
+result = first + last
+print(result)
+
