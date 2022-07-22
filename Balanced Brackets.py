@@ -8,8 +8,8 @@ def check_balance (my_string):
             count2 += 1
         
     if count1 == count2:
-        return True
+        print('it is balanced')
     else:
-        return False
+        print('it is unbalanced')
 
 check_balance('[[[[][]]]]')
