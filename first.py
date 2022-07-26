@@ -745,3 +745,22 @@ num_list = [1,2,3,4,5,6]
 num_list.insert(3,4)
 print(num_list)
 
+# REMOVING ELEMENTS:
+# pop() method - will remove the last element from the list
+
+house = ["aryan", "rohit", "virat", "sachin"]
+last_house = house.pop()
+print(last_house)
+print(house)
+
+# if we want to delete a particular value from a list, we can use the remove() method
+# syntax- a_list.remove(element_to_be_deleted)
+
+house.remove("rohit")
+print(house)
+
+# for nested list
+population = [["winterfell", 10000], ["King's Landing", 50000], ["Iron Islands", 5000]]
+print(population)
+population.remove(["King's Landing", 50000])
+print(population)
