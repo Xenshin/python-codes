@@ -737,3 +737,11 @@ num_list.append(1)
 num_list.append(2)
 num_list.append(3)
 print(num_list)
+
+# we can also use insert() method
+# syntax- a_list.insert(index, newElement)
+'if a value already exists at that index, the whole list from that value onwards will be shifted one step to the right'
+num_list = [1,2,3,4,5,6]
+num_list.insert(3,4)
+print(num_list)
+
