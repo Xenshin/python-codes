@@ -726,3 +726,14 @@ print(merged_list)
 part_A.extend(part_B)
 print(part_A)
 
+# COMMON LIST OPERATIONS:
+
+# Adding elements:
+'the append() method can be used to add a new element at the end of a list'
+# syntax:- a_list.append(newElement)
+
+num_list = [] # empty list
+num_list.append(1)
+num_list.append(2)
+num_list.append(3)
+print(num_list)
