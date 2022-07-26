@@ -668,3 +668,31 @@ def fib(n):
 n = 7
 print(fib(n))
 
+# LIST:
+
+# creating a List:
+jon_snow = ["jon Snow", "winterfell", 30]
+print(jon_snow)
+
+# indexing
+print(jon_snow[0])
+
+# length
+print(len(jon_snow))
+
+# the beauty of lists lies in the fact that we are not bound to one type of data.
+
+# lists are mutable, which further expands their functionality
+
+print(jon_snow[2])
+jon_snow[2] += 3
+print(jon_snow[2])
+
+# USING RANGE()
+num_seq = range(0, 10) # a sequence from 0 tp 9
+num_list = list(num_seq) # the list method casts the sequence into a list
+print(num_list)
+
+num_seq = range(3,20,3) # a sequence from 3 to 19 with a step of 3
+print(list(num_seq))
+
