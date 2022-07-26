@@ -11,3 +11,7 @@ print(concat_strings("world", "wide", "web"))
 my_func = lambda num: "high" if num>50 else "low"
 
 print(my_func(67))
+
+
+
+

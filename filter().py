@@ -3,3 +3,4 @@
 numlist = [30,2,-15,17,9,100]
 greater_than_10 = filter(lambda n : n>10, numlist)
 print(list(greater_than_10))
+
