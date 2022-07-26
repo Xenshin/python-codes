@@ -772,3 +772,11 @@ num_list = [1,2,3,4,5,6,7,8]
 print(num_list[2:5])
 print(num_list[0::2]) # step of 2
 
+# INDEX SEARCH:
+cities = ["delhi", "mumbai", "hyderabad", "bengaluru", "kolkata"]
+print(cities.index("mumbai"))
+
+# If we just want to verify the existence of an element in a list, we can use the 'in' operator
+print("delhi" in cities)
+print("noida" not in cities)
+
