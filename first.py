@@ -703,3 +703,15 @@ world_cup_winners = [[2006,"Italy"], [2010, "Spain"],
 
 print(world_cup_winners)
 
+
+# SEQUENTIAL INDEXING:
+"""To access the elements of a list or a string which exists inside another list,
+we can use the concept of sequential indexing."""
+
+"""Each level of indexing takes us deeper into the list"""
+world_cup_winners = [[2006, "Italy"], [2010, "Spain"],
+                     [2014, "Germany"], [2018, "France"]]
+
+print(world_cup_winners[1]) 
+print(world_cup_winners[1][1]) # accessing Spain
+print(world_cup_winners[1][1][0]) # accessing S
