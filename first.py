@@ -1,3 +1,6 @@
+from audioop import reverse
+
+
 print('hello world!')
 print("hello world", 50, 3.22, end=" ")#ending with end="" makes the next thing to get printed in the same line
 print("printing in same line")#whatever is in between "", in end = "" gets printed in the end of the first line of the print and before the begining of the second line in the same line
@@ -780,3 +783,9 @@ print(cities.index("mumbai"))
 print("delhi" in cities)
 print("noida" not in cities)
 
+# LIST SORT:
+num_list = [20,40,10,50.4,30,100,5]
+num_list.sort() # sorts in ascending order
+print(num_list)
+num_list.sort(reverse= True) # sorts in descending order
+print(num_list)
