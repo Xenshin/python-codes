@@ -715,3 +715,14 @@ world_cup_winners = [[2006, "Italy"], [2010, "Spain"],
 print(world_cup_winners[1]) 
 print(world_cup_winners[1][1]) # accessing Spain
 print(world_cup_winners[1][1][0]) # accessing S
+
+# MERGING LIST
+part_A = [1,2,3,4,5]
+part_B = [6,7,8,9,10]
+merged_list = part_A + part_B
+print(merged_list)
+
+# we can also use the extend() property of a list to add the elements of one list at the end of another
+part_A.extend(part_B)
+print(part_A)
+
