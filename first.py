@@ -696,3 +696,10 @@ print(num_list)
 num_seq = range(3,20,3) # a sequence from 3 to 19 with a step of 3
 print(list(num_seq))
 
+# List-Ception
+
+world_cup_winners = [[2006,"Italy"], [2010, "Spain"],
+                     [2014, "Germany"], [2018, "France"]]
+
+print(world_cup_winners)
+
