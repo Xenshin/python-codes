@@ -764,3 +764,11 @@ population = [["winterfell", 10000], ["King's Landing", 50000], ["Iron Islands",
 print(population)
 population.remove(["King's Landing", 50000])
 print(population)
+
+# LIST SLICING:
+'It is the term used for obtaining a portion of a list given the start and end indices'
+
+num_list = [1,2,3,4,5,6,7,8]
+print(num_list[2:5])
+print(num_list[0::2]) # step of 2
+
