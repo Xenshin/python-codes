@@ -941,4 +941,11 @@ second_phone_book = {"catwoman":23432, "jaime":33333, "shehulk":11111}
 phone_book.update(second_phone_book)
 print(phone_book)
 
+# DICTIONARY COMPREHENSION:
+""" to iterate the dictionary, we'll use the 'dict.items()' operation which turns a dictionary into a list of (key, value) tuples."""
+# Here's is a simple example where the keys of the original dictionary are squared and '!' is appended to each string value
 
+house = {1:"gryffindor", 2:"slytherin", 3:"hufflepuff", 4:"ravenclaw"}
+new_house = {n**2:house+'!' for (n, house) in house.items()}
+print(house)
+print(new_house)
