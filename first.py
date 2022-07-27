@@ -849,4 +849,20 @@ hero2 = ("Wonder Woman", "Diana Prince")
 awesome_team = hero1+hero2
 print(awesome_team)
 
+# Nested Tuples
+# in the previous coding example, istead of merging the two tuples, we could create a new tuple with these two tuples as its members
+new_team = (hero1, hero2)
+print(new_team)
+
+# SEARCH
+# we can check whether an element exists in a tuple by using the in operator as follows
+cities = ("delhi", "noida", "gurgaon", "mumbai")
+print("madras" in cities)
+
+# the index() function can give us the index of a particular value:
+print(cities.index("delhi"))
+
+# IMMUTABILITY:
+# since tuples are immutable, we can't add or delete elements from them. Furthermore, it isn't possible to append another tuple to an existing tuple
+
 
