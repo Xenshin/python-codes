@@ -933,4 +933,12 @@ print(len(phone_book))
 print("ghostbusters" in phone_book)
 print("godzilla" in phone_book)
 
+# COPYING CONTENTS:
+# to copy the contents of one dictionary to another, we can use the update() operation:
+second_phone_book = {"catwoman":23432, "jaime":33333, "shehulk":11111}
+
+# add second_phone_book to phone_book
+phone_book.update(second_phone_book)
+print(phone_book)
+
 
