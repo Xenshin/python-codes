@@ -910,4 +910,18 @@ phone_book["godzilla"] = 99000 #updating entry
 phone_book["cersei"] = 76000
 print(phone_book)
 
+# removing entries:
+# to remove an entry we use 'del' keyword
 
+del phone_book["batman"]
+print(phone_book)
+
+# if you want to use the deleted value, the pop() or popitem() methods would work better
+cersei = phone_book.pop("cersei")
+print(phone_book)
+print(cersei)
+
+# Removes and returns the last inserted pair, as a tuple
+# In Python versions before 3.7, popitem() removes and returns the random item
+lastAdded = phone_book.popitem()
+print(lastAdded)
