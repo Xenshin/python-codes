@@ -929,4 +929,8 @@ print(lastAdded)
 # LENGTH OF A DICTIONARY:
 print(len(phone_book))
 
+# CHECKING KEY EXISTENCE:
+print("ghostbusters" in phone_book)
+print("godzilla" in phone_book)
+
 
