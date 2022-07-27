@@ -925,3 +925,8 @@ print(cersei)
 # In Python versions before 3.7, popitem() removes and returns the random item
 lastAdded = phone_book.popitem()
 print(lastAdded)
+
+# LENGTH OF A DICTIONARY:
+print(len(phone_book))
+
+
