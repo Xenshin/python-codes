@@ -828,3 +828,19 @@ list1 = [30, 50, 110, 40, 15, 75]
 list2 = [10, 60, 20, 50]
 sum_list = [(n1, n2) for n1 in list1 for n2 in list2 if n1+n2 > 110]
 print(sum_list)
+
+# TUPLES
+'A tuple is very similar to a list, except fot the fact that its contents cannot be changed. (immmutable)'
+
+# tuples can be created similar to lists. All the indexing and slicing operations apply to it as well
+
+car = ("Food", "Raptor", 2019, "Red")
+print(car)
+# length
+print(len(car))
+# indexing
+print(car[1])
+# slicing
+print(car[2:])
+
+
