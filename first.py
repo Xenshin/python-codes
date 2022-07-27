@@ -901,3 +901,13 @@ Instead, we can access a value by enclosing its key in square brackets, []. This
 
 print(phone_book["cersei"])
 print(phone_book.get("ghostbusters")) 
+
+# Adding/Updating Entries:
+phone_book["godzilla"] = 45763 #new entry
+print(phone_book)
+
+phone_book["godzilla"] = 99000 #updating entry
+phone_book["cersei"] = 76000
+print(phone_book)
+
+
