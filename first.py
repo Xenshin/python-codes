@@ -865,4 +865,39 @@ print(cities.index("delhi"))
 # IMMUTABILITY:
 # since tuples are immutable, we can't add or delete elements from them. Furthermore, it isn't possible to append another tuple to an existing tuple
 
+# DICTIONARIES:
+' A dictionary stores key-value pairs, where each unique key is an index which holds the value associated with it.'
+" In simpler terms information is stored in pairs of words and meanings."
+# the dictionaries are unordered because the entries are not stored in a linear structure.
 
+empty_dict = {} #empty dictionary
+print(empty_dict)
+phone_book = {"batman":12345, 
+              "cersei":98765, 
+              "ghostbusters":34523}
+
+print(phone_book)
+
+"""Since the dictionary is an unordered data structure, the order of the output will not necessarily match the order in which
+ we wrote the entries. Key-value pairs are accessed in a random or unordered manner."""
+
+# the Dict() constructor:
+empty_dict = dict() #empty dictionary
+print(empty_dict)
+
+phone_book = dict(batman=12345, cersei=98765, ghostbusters=34523)
+# keys will automatically be converted to strings
+print(phone_book)
+
+# two keys can have the same values. however it is crucial that all the keys are unique.
+""" For many, this is where a dictionary has an edge over a list or a tuple. Since there are no linear indices, we do not need to 
+keep track of where values are stored.
+
+Instead, we can access a value by enclosing its key in square brackets, []. This is more meaningful than the integer indices we use
+ for tuples and lists."""
+
+# alternatively, we can use the get() method:
+# syntax- a_dictionary.get(key)
+
+print(phone_book["cersei"])
+print(phone_book.get("ghostbusters")) 
