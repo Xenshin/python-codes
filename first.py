@@ -949,3 +949,18 @@ house = {1:"gryffindor", 2:"slytherin", 3:"hufflepuff", 4:"ravenclaw"}
 new_house = {n**2:house+'!' for (n, house) in house.items()}
 print(house)
 print(new_house)
+
+
+# SETS
+'1.) A set is an unordered collection of data items.'
+'2.) The data is not indexed, so we cannot access elements using indices or get()'
+'3.) Mutable data structure like lists or dictionaries cannnot be added to a set. However adding a tuple is fine'
+# as it does'nt allow duplicates, so we can convert any data structure to set to remove duplicates
+
+# Creating a Set
+random_set = {"Educative", 1408, 3.142, (True, False)}
+print(random_set)
+print(len(random_set)) 
+
+# THE SET() CONSTRUCTOR:
+'the set() constructor is an alternate way of creating sets. the advantage it presents is that it allows us to make an empty set.'
