@@ -789,3 +789,32 @@ num_list.sort() # sorts in ascending order
 print(num_list)
 num_list.sort(reverse= True) # sorts in descending order
 print(num_list)
+
+
+# LIST COMPREHENSION:
+'this is a technique that uses a for loop and a condition to create a new list from an existing one.'
+# as result is always a new list so its better to assign list comprehension to a new variable
+
+# structure:
+'''it has three parts:
+[expression for loop if condition]
+
+1.) the expression is an operation used to create elements in the new list.
+2.) the for loop will iterate an existing list. the iterator will be used in the expression
+3.) new elements will be added to the new list when the if condition is fulfilled. this component is optional'''
+
+# creating a list comprehension
+nums = [10, 20, 30, 40, 50]
+nums_double = []
+for n in  nums:
+    nums_double.append(n*2)
+
+print(nums)
+print(nums_double)
+
+# now list comprehension:
+nums_triple = [n*3 for n in nums]
+
+print(nums)
+print(nums_triple)
+
