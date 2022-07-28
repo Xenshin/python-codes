@@ -1016,3 +1016,12 @@ print(setA | setB) # through pipe '|' operator
 print(setA.union(setB)) # through union() method
 print(setB.union(setA))
 # as sets are unordered, the order of contents in the three outputs above does not matter.
+
+# INTERSECTION:
+' The intersection of two sets is the collection of unique elements which are common between them.'
+setA = {1,2,3,4}
+setB = {2,8,4,16}
+print(setA & setB) # through '&' operator
+print(setA.intersection(setB)) # through intersection() method
+print(setB.intersection(setA))
+
