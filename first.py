@@ -1032,3 +1032,26 @@ print(setA.difference(setB)) # through difference() method
 
 print(setB-setA) # it will return the elements present in the setB
 print(setB.difference(setA)) 
+
+# DATA STRUCTURE CONVERSION:
+'Syntax-' # destination_structure_name(source_structure_name)
+
+# Converting to a list
+star_wars_tup = ("Anakin", "Darth Vader", 1000)
+print(star_wars_tup)
+star_wars_set = {"Anakin", "Darth Vader", 1000}
+print(star_wars_set)
+start_wars_dict = {1:"Anakin", 2:"Darth Vader", 3:1000}
+print(start_wars_dict)
+
+star_wars_list = list(star_wars_tup) # converting from tuple
+print(star_wars_list)
+star_wars_list = list(star_wars_set) # converting from set
+print(star_wars_list)
+star_wars_list = list(start_wars_dict) # converting from dict
+print(star_wars_list) # in case of dictionary only keys will be converted to list
+
+'we can use the dict.items() method of a dictionary to convert it into an iterable of (key, value) tuples'
+'then this could be further cast into list'
+star_wars_list = list(start_wars_dict.items())
+print(star_wars_list)
