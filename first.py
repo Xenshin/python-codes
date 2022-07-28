@@ -978,3 +978,15 @@ print(empty_set)
 
 empty_set.update([2,3,4,5,6])
 print(empty_set)
+
+# DELETING ELEMENTS:
+random_set = set({"Educative", 1408, 3.142, (True, False)})
+print(random_set)
+
+random_set.discard(1408)
+print(random_set)
+
+random_set.remove((True, False))
+print(random_set)
+# the remove method generates an error if the item is not found, unlike the discard() method.
+
