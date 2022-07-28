@@ -1041,17 +1041,32 @@ star_wars_tup = ("Anakin", "Darth Vader", 1000)
 print(star_wars_tup)
 star_wars_set = {"Anakin", "Darth Vader", 1000}
 print(star_wars_set)
-start_wars_dict = {1:"Anakin", 2:"Darth Vader", 3:1000}
-print(start_wars_dict)
+star_wars_dict = {1:"Anakin", 2:"Darth Vader", 3:1000}
+print(star_wars_dict)
 
 star_wars_list = list(star_wars_tup) # converting from tuple
 print(star_wars_list)
 star_wars_list = list(star_wars_set) # converting from set
 print(star_wars_list)
-star_wars_list = list(start_wars_dict) # converting from dict
+star_wars_list = list(star_wars_dict) # converting from dict
 print(star_wars_list) # in case of dictionary only keys will be converted to list
 
 'we can use the dict.items() method of a dictionary to convert it into an iterable of (key, value) tuples'
 'then this could be further cast into list'
-star_wars_list = list(start_wars_dict.items())
+star_wars_list = list(star_wars_dict.items())
 print(star_wars_list)
+
+# CONVERSION TO TUPLE:
+# again in the case of dictionary only keys will be converted to tuple
+star_wars_list = ["Anakin", "Darth Vader", 1000]
+print(star_wars_list)
+
+star_wars_tup = tuple(star_wars_list)  # Converting from list
+print(star_wars_tup)
+
+star_wars_tup = tuple(star_wars_set)  # Converting from set
+print(star_wars_tup)
+
+star_wars_tup = tuple(star_wars_dict)  # Converting from dictionary
+print(star_wars_tup)
+
