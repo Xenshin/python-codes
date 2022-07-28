@@ -990,3 +990,17 @@ random_set.remove((True, False))
 print(random_set)
 # the remove method generates an error if the item is not found, unlike the discard() method.
 
+# ITERATING A SET:
+''' The for loop can be used to on unordered data structures like sets.However, we wouldn't know the order in which the iterator moves
+meaning elements will be panicked randomly'''
+
+odd_list = [1,3,5,7]
+unordered_list = {9,10,11,12,13,14,15,16,17}
+
+print(unordered_list)
+
+for num in unordered_list:
+    if (num%2 != 0):
+        odd_list.append(num)
+
+print(odd_list)
