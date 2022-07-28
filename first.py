@@ -964,3 +964,17 @@ print(len(random_set))
 
 # THE SET() CONSTRUCTOR:
 'the set() constructor is an alternate way of creating sets. the advantage it presents is that it allows us to make an empty set.'
+
+# ADDING ELEMENTS:
+'To add a single item, we can use the add() method.'
+'To add multiple items, we would have to use update()'
+'The input for update() must be another set, list, tuple or string'
+
+empty_set = set()
+print(empty_set)
+
+empty_set.add(1)
+print(empty_set)
+
+empty_set.update([2,3,4,5,6])
+print(empty_set)
