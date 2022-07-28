@@ -1004,3 +1004,15 @@ for num in unordered_list:
         odd_list.append(num)
 
 print(odd_list)
+
+# SET THEORY OPERATIONS:
+
+# UNION:
+' A union of two sets is the collection of all the unique elements from both the sets'
+setA={1,2,3,4}
+setB={'a', 'b', 'c', 'd'}
+
+print(setA | setB) # through pipe '|' operator
+print(setA.union(setB)) # through union() method
+print(setB.union(setA))
+# as sets are unordered, the order of contents in the three outputs above does not matter.
