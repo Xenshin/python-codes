@@ -1025,3 +1025,10 @@ print(setA & setB) # through '&' operator
 print(setA.intersection(setB)) # through intersection() method
 print(setB.intersection(setA))
 
+# DIFFERENCE:
+' The difference between two sets is the collection of all unique elements present in the first set but not in the second set'
+print(setA-setB) # it will return the elements which are only present in setA
+print(setA.difference(setB)) # through difference() method
+
+print(setB-setA) # it will return the elements present in the setB
+print(setB.difference(setA)) 
