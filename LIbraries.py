@@ -50,3 +50,23 @@ print(log100)
 
 # To get all math methods for complex numbers, use the cmath module instead
 
+# HEAPQ
+''' The heapq module allows us to create the heap data structure. A heap is a binary tree which always stores
+a special value at the top (root). A minheap stores the smallest value at the top and a 
+maxheap stores the largest value at the top.'''
+
+'the pop method returns the value at the top of the heap.'
+# python's heapq creates a minheap by default
+import heapq
+heap = [] # empty heap
+# inserting elements in the heap
+heapq.heappush(heap, 10)
+heapq.heappush(heap, 70)
+heapq.heappush(heap, 5)
+heapq.heappush(heap, 35)
+heapq.heappush(heap, 50)
+
+# popping the smalles value
+minimum = heapq.heappop(heap)
+print(minimum)
+
