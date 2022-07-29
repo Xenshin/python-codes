@@ -70,3 +70,16 @@ heapq.heappush(heap, 50)
 minimum = heapq.heappop(heap)
 print(minimum)
 
+# Random:
+'the random module is used for generating random numbers in python.'
+import random
+rand_num = random.random()
+print(rand_num) # random() method generates a random floating-point number between 0 and 1
+
+rand_num_in_range = random.uniform(30,50)
+print(rand_num_in_range) # uniform() method returns a floating-point number within a custom range
+
+str_list = ['a', 'b', 'c', 'd', 'e']
+random.shuffle(str_list)
+print(str_list) # shuffle() method shuffles the elements of the list
+
