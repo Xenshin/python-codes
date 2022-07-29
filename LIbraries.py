@@ -34,3 +34,19 @@ time_today = dt.datetime.now()
 print(time_today.strftime("%H:%M:%S"))
 
 
+# POPULAR MODULES:
+# math:
+' The math module offers a wide range of mathematical functions such as factorial, trignometric operations'
+
+import math
+fact_of_5 = math.factorial(5)
+print(fact_of_5)
+
+gcd = math.gcd(300, 90) # Greatest Common Denominator
+print(gcd)
+
+log100 = (math.log(10,100)) # logarithm of 10 to the base 100
+print(log100)
+
+# To get all math methods for complex numbers, use the cmath module instead
+
