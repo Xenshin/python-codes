@@ -1,5 +1,5 @@
 
-list1 = ['A', 'B', 'C', 'D', 'A', 'B', 'A', 'A', 'D', 4, 6, 45, 4, 5, 6]
+list1 = ['A', 'B', 'C', 'D', 'A', 'B', 'A', 'A', 'D']
 new_dict = {}
 for i in range(len(list1)):
     count = 1
@@ -15,4 +15,6 @@ for i in list1:
         new_dict[i] = 1
 
 print(new_dict)
+print(sorted(new_dict.items()))
+
 
