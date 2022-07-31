@@ -123,5 +123,11 @@ for i in range (3):
     my_dict[i] = j
 print(my_dict)
 
-G = ['A', 'I', 'C', 'C', 'E', 'B', 'A', 'E', 'E', 'A', 'B', 'B', 'B'] 
-print(G.unique())
+my_dict = {'Educative' : 1,
+'Apple' : 2,
+'Amazon' : 3
+}
+for (key, values) in my_dict.items():
+  print(key, values)
+  
+
