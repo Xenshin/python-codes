@@ -26,3 +26,22 @@ print("team name:", p2.teamName)
 
 '''as we can see the variable name is different for different objects (p1, p2) of the class player and varible teamName has the same value'''
 
+# WRONG USE OF CLASS VARIABLES
+''' It is imperative to use class variable properly since they are shared by all the class objects and can be modified using any one of them'''
+class Player:
+    formerTeam = []
+    teamName = 'liverpool'
+    def __init__(self, name):
+        self.name = name
+
+p1 = Player("mark")
+p1.formerTeam.append('Barcelona') # will make formerTeam = ['Barcelona']
+p2 = Player("steve")
+p1.formerTeam.append('Chelsea') # will make formerTeam = ['Barcelona', 'Chelsea']
+
+print("name:", p1.name)
+print("team name:", p1.teamName)
+print(p1.formerTeam) # till here formerTeam value is formerTeam = ['Barcelona', 'Chelsea']
+print("name:", p2.name)
+print("team name:",p2.teamName)
+print(p2.formerTeam) # till here formerTeam value is formerTeam = ['Barcelona', 'Chelsea']
