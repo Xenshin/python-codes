@@ -65,4 +65,24 @@ print("Team Name:", p1.teamName)
 print(p1.formerTeams)
 print("Name:", p2.name)
 print("Team Name:", p2.teamName)
-print(p2.formerTeams)
+print(p2.formerTeams) # Now the property formerTeams is unique for each Player class object and can only be accessed by that unique object.
+
+
+# USING CLASS VARIABLE SMARTLY
+class player: # defining class
+    teamName = 'liverpool'
+    teamMembers = []
+    def __init__(self, name):
+        self.name = name
+        self.formerTeams = []
+        self.teamMembers.append(self.name)
+
+# defining objects
+p1 = player("mark") # this appends mark in teamMembers
+p2 = player("steve") # this appends steve in teamMembers
+
+print("name:", p1.name)
+print("team members:", p1.teamMembers)
+print("name:", p2.name)
+print("team members:", p2.teamMembers)
+
