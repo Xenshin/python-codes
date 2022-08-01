@@ -26,6 +26,16 @@ print("Id =", steve.Id)
 print("Salary =", steve.salary)
 print("Department =", steve.department)
 
+# Creating properties outside a class
+steve.title = "manager"
+
+# Printing properties of steve
+print("Id = ", steve.Id)
+print("salary =", steve.salary)
+print("Department =", steve.department)
+print("title =", steve.title)
+
+# The property title, will only be added to steve and all other future objects will only have the properties which are declared in the class
 
 
     
