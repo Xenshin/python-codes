@@ -67,3 +67,9 @@ print(obj.sum(10, 20))
 print(obj.sum(10))
 # now our method can perform three different tasks based on the number of arguments passed
 
+
+# ADVANTAGES OF METHOD OVERLOADING:
+'''1.) Overloading saves us memory in the system
+2.) Increases execution speed
+3.) makes code cleaner and readable
+4.) Allows the implementations of polymorphosism'''
