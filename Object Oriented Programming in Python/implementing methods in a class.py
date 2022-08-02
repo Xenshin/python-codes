@@ -73,3 +73,53 @@ print(obj.sum(10))
 2.) Increases execution speed
 3.) makes code cleaner and readable
 4.) Allows the implementations of polymorphosism'''
+
+
+# CLASS METHOD
+'Class method work with class variables and are accessible using the class name rather than its object'
+'Since all the class objects share the class variables, class methods are used to access and modify class variables'
+
+class Player:
+    teamName = 'Liverpool' # class variable
+
+    def __init__(self, name):
+        self.name = name # instance variable
+    
+    @classmethod
+    def getTeamName(cls):
+        return cls.teamName
+
+print(Player.getTeamName()) # class method is accessed using class variable
+
+
+# STATIC METHODS
+'static methods are usually limited to class only and not their objects.'
+'They have no direct relation to class variables or instance variables.'
+'Static methods can be accessed using the class name or the object name'
+
+class Player:
+    teamName = 'Liverpool' # class variable
+
+    def __init__(self, name):
+        self.name = name # creating instance variables
+
+    @staticmethod # constructor used to define static method
+    def demo():
+        print("I am a static method")
+
+p1 = Player('lol') # defining an object for the class
+p1.demo() # accessing the method through object
+Player.demo() # accessign the method through class
+
+'The purpose of a static method is to use its parameters and produce a useful result'
+
+# through a class of bodyinfo, which contains the physical attribute of all the students
+# now calculating the BMI
+
+class BodyInfo:
+
+    @staticmethod
+    def bmi(weight, height):
+        return weight/height**2
+
+print(BodyInfo.bmi(64, 1.71))
