@@ -12,6 +12,9 @@ class Stack():
     def pop(self): # creating pop method
         return self.items.pop() # pop by default returns the last element inserted to the list
 
+    def is_empty(self):
+        return self.items == []
+
     def get_stack(self): # this method will return the items list
         return self.items
 
@@ -23,4 +26,5 @@ myStack.push("C") # pushing C in the stack
 print(myStack.get_stack()) # printing all the elements of the stack
 myStack.pop() # popping the top element of the stack i.e.,C
 print(myStack.get_stack()) # printing all the elements present in the stack
+print(myStack.is_empty()) # checks whether stack is empty or not, and returns Bool
 
