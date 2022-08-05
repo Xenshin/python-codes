@@ -15,6 +15,10 @@ class Stack():
     def is_empty(self):
         return self.items == []
 
+    def peek(self):
+        if not self.is_empty(): # if stack is not empty
+            return self.items[-1] # then return the last added element (top element)
+
     def get_stack(self): # this method will return the items list
         return self.items
 
@@ -27,4 +31,6 @@ print(myStack.get_stack()) # printing all the elements of the stack
 myStack.pop() # popping the top element of the stack i.e.,C
 print(myStack.get_stack()) # printing all the elements present in the stack
 print(myStack.is_empty()) # checks whether stack is empty or not, and returns Bool
+print(myStack.peek()) # as stack is not empty so returns the top element i.e., B
+
 
