@@ -34,3 +34,5 @@ print(myStack.is_empty()) # checks whether stack is empty or not, and returns Bo
 print(myStack.peek()) # as stack is not empty so returns the top element i.e., B
 
 
+
+
