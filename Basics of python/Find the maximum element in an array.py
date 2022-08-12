@@ -6,4 +6,6 @@ def max_in_array(arr):
     return max
 
 new_array = [12,56,74,2,54,18]
+new_array.reverse()
 print(max_in_array(new_array))
+print(new_array)
