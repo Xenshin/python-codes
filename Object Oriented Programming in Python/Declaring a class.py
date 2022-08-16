@@ -5,6 +5,6 @@ class ClassName: # class keyword tells the compiler that we are creating a custo
 1.) Must start with a letter or underscore
 2.) Should only be comprised of numbers, letters, or underscores'''
 
-obj = ClassName() # Creating a ClassName object
+obj = ClassName() # Creating an object of class ClassName
 print(obj)
 
