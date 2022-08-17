@@ -123,3 +123,6 @@ class BodyInfo:
         return weight/height**2
 
 print(BodyInfo.bmi(64, 1.71))
+
+""" Static methods do not know anything about the state of the class. i.e., they cannot modify class attributes.
+The purpose of static method is to use its parameters and produce a useful result."""
