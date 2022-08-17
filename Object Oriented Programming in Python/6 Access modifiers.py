@@ -27,5 +27,18 @@ steve = Employee(3789, 2500)
 print("ID:", steve.ID)
 # print("salary:", steve.__salary) # will produce an error
 
+"PRIVATE METHODS"
 
+class Employee:
+    def __init__(self, ID, salary):
+        self.ID = ID
+        self.__salary = salary
+    def displaySalary(self):
+        print("salary:", self.__salary) # __salary which is a private attribute can be accessed inside the class
+    def __displayID(self):
+        print("ID:", self.ID)
+
+steve = Employee(3789, 2500)
+steve.displaySalary()
+#steve.__displayID() # will produce error for being private method
 
