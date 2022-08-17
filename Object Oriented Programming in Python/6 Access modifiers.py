@@ -42,3 +42,12 @@ steve = Employee(3789, 2500)
 steve.displaySalary()
 #steve.__displayID() # will produce error for being private method
 
+" ACCESSING PRIVATE ATTRIBUTES IN THE MAIN CODE"
+
+class Employee:
+    def __init__(self, ID, salary):
+        self.ID = ID
+        self.__salary = salary
+
+steve = Employee(3789, 2500)
+print(steve._Employee__salary) # to access private attributes outside the class we can use '_<className>' prefix
