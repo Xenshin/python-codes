@@ -23,3 +23,8 @@ These methods are called getters and setters'''
 3.) We decide which outside classes or functions can access the class properties
 '''
 
+# Getters and Setters
+'''
+1.) A getter method allows reading a property's value.
+2.) A setter method allows modifying a property's value
+'''
