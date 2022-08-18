@@ -28,3 +28,16 @@ These methods are called getters and setters'''
 1.) A getter method allows reading a property's value.
 2.) A setter method allows modifying a property's value
 '''
+
+class user:
+    def __init__(self, username=None):
+        self.__username = username
+    def setUsername(self,x):
+        self.__username = x
+    def getUsername(self):
+        return (self.__username)
+
+steve = user('steve1')
+print('Before setting:', steve.getUsername())
+steve.setUsername('steve2')
+print('After setting:', steve.getUsername())
