@@ -41,3 +41,22 @@ steve = user('steve1')
 print('Before setting:', steve.getUsername())
 steve.setUsername('steve2')
 print('After setting:', steve.getUsername())
+
+#UNDERSTANDING ENCAPSULTAION USING EXAMPLES:
+'A bad example'
+class User:
+    def __init__(self, userName=None, password=None):
+        self.userName = userName
+        self.password = password
+
+    def login(self, userName, password):
+        if ((self.userName.lower() == userName.lower()) and (self.password == password)):
+            print('Access granted')
+        else:
+            print('Invalid Credentials')
+
+steve = User("Steve", "12345")
+steve.login("steve", "12345")
+steve.login("steve", "6789")
+steve.password = "6789"
+steve.login("steve", "6789")
