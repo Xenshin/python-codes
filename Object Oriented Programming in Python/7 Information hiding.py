@@ -60,3 +60,24 @@ steve.login("steve", "12345")
 steve.login("steve", "6789")
 steve.password = "6789"
 steve.login("steve", "6789")
+
+''' In this example, we can observe that anyone can access, change or print the password and username fields directly from the main code'''
+
+'A good example'
+class User:
+    def __init__(self, userName=None, password=None):
+        self.__userName = userName
+        self.__password = password
+    def login(self, userName, password):
+        if ((self.__userName.lower() == userName.lower()) and (self.__password == password)):
+            print("access granted against username: ",self.__userName, "and password: ", self.__password)
+        else:
+            print("Invalid credentials")
+
+steve = User("steve", "12345")
+steve.login("Steve", "12345") # will be granted access
+steve.login("Steve", "6789") # credentials are invalid
+# steve.__password # error
+
+
+
