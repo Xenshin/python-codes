@@ -114,3 +114,22 @@ priusPrime = hybrid()
 priusPrime.setTopSpeed(220)
 priusPrime.openTrunk()
 priusPrime.turnOnHybrid()
+
+# Hierarchical inheritance:
+"In this, more than one class extends, as per the requirement of the design, from the same base class, the common attributes of these child classes are implemented inside the base class"
+class vehicle:
+    def setTopSpeed(self, speed):
+        self.topSpeed = speed
+        print("top speed is set to ", self.topSpeed)
+
+class car(vehicle):
+    pass
+
+class truck(vehicle):
+    pass
+
+corolla = car()
+corolla.setTopSpeed(220)
+
+volvo = truck()
+volvo.setTopSpeed(180)
