@@ -153,3 +153,29 @@ car = hybridEngine()
 car.setChargeCapacity("250 W")
 car.setTankCapacity("20 Litres")
 car.printDetails()
+
+# Hybrid Inheritance:
+" combination of Multiple and Multi-level inheritance"
+class Engine:
+    def setPower(self, power):
+        self.power = power
+
+class CombustionEngine(Engine):
+    def setTankCapacity(self, tankCapacity):
+        self.tankCapacity = tankCapacity
+
+class ElectricEngine(Engine):
+    def setChargeCapacity(self, chargeCapacity):
+        self.chargeCapacity = chargeCapacity
+
+class hybridEngine(CombustionEngine, ElectricEngine):
+    def printDetails(self):
+        print("Power:", self.power)
+        print("tank capacity:", self.tankCapacity)
+        print("charge capacity:", self.chargeCapacity)
+
+car = hybridEngine()
+car.setPower("2000 cc")
+car.setChargeCapacity("250 W")
+car.setTankCapacity("20 Litres")
+car.printDetails()
