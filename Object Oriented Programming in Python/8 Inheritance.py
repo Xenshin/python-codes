@@ -23,3 +23,18 @@ class car(vehicle):
 
 obj1 = car("suzuki", "grey", "2015", 4)
 obj1.printCarDetails()
+
+# Super() function:
+class vehicle:
+    fuelcap = 90
+class car(vehicle):
+    fuelcap = 50
+
+    def display(self):
+        # accessing fuel cap from the vehicle class using super()
+        print("Fuel cap from the vehicle class:", super().fuelcap)
+        # accessing fuel cap from the car class using self
+        print("fuel cap from the car class:", self.fuelcap)
+
+obj1 = car() # creating an object from class car
+obj1.display()
