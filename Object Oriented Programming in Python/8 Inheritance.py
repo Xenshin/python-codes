@@ -25,6 +25,8 @@ obj1 = car("suzuki", "grey", "2015", 4)
 obj1.printCarDetails()
 
 # Super() function:
+# accessing parent class properties
+
 class vehicle:
     fuelcap = 90
 class car(vehicle):
@@ -38,3 +40,16 @@ class car(vehicle):
 
 obj1 = car() # creating an object from class car
 obj1.display()
+
+# calling the parent class methods
+class vehicle:
+    def display(self):
+        print("I am from the class vehicle")
+
+class car(vehicle):
+    def display(self):
+        super().display()
+        print("I am from the car class")
+
+obj1 = car() # creating the car object
+obj1.display() # calling the car class method display()
