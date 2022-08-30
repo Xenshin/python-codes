@@ -73,3 +73,24 @@ print(obj1.a)
 print(obj1.b)
 print(obj1.c)
 
+# TYPES OF INHERITANCE:
+'''1.) Single Inheritance
+   2.) Multi-level Inheritance
+   3.) Hierarchical Inheritance
+   4.) Multiple Inheritance
+   5.) Hybrid Inheritance'''
+
+# Single Inheritance:
+" There is only a single class extending from another class"
+class vehicle:
+    def setTopSpeed(self, speed):
+        self.topSpeed = speed
+        print("Top speed is set to", self.topSpeed)
+
+class car(vehicle):
+    def openTrunk(self):
+        print("Trunk is now open")
+
+corolla = car()
+corolla.setTopSpeed(220)
+corolla.openTrunk()
