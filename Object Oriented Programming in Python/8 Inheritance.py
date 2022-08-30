@@ -94,3 +94,23 @@ class car(vehicle):
 corolla = car()
 corolla.setTopSpeed(220)
 corolla.openTrunk()
+
+# Multi-level Inheritance:
+"When a class is derived from a class which itself is derived from another class"
+class vehicle:
+    def setTopSpeed(self, speed):
+        self.topSpeed = speed
+        print("top speed is set to ", self.topSpeed)
+
+class car(vehicle):
+    def openTrunk(self):
+        print("Trunk is now open")
+
+class hybrid(car):
+    def turnOnHybrid(self):
+        print("hybrid mode is now switched on")
+
+priusPrime = hybrid()
+priusPrime.setTopSpeed(220)
+priusPrime.openTrunk()
+priusPrime.turnOnHybrid()
