@@ -133,3 +133,23 @@ corolla.setTopSpeed(220)
 
 volvo = truck()
 volvo.setTopSpeed(180)
+
+# Multiple Inheritance:
+"when a class has more than one immediate parent class"
+class combustionEngine:
+    def setTankCapacity(self, tankCapacity):
+        self.tankCapacity = tankCapacity
+
+class electricEngine:
+    def setChargeCapacity(self, chargeCapacity):
+        self.chargeCapacity = chargeCapacity
+
+class hybridEngine(combustionEngine, electricEngine):
+    def printDetails(self):
+        print("tank capacity:", self.tankCapacity)
+        print("charge capacity:", self.chargeCapacity)
+    
+car = hybridEngine()
+car.setChargeCapacity("250 W")
+car.setTankCapacity("20 Litres")
+car.printDetails()
