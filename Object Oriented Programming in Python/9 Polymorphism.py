@@ -1,6 +1,3 @@
-from turtle import circle
-
-
 class Rectangle:
     #initializer
     def __init__(self, width=0, height=0,):
@@ -22,7 +19,7 @@ class Circle():
     def getArea(self):
         return (self.radius*self.radius*3.142)
 
-shapes = [Rectangle(6,10), circle(7)]
+shapes = [Rectangle(6,10), Circle(7)]
 print("sides of a rectange are", str(shapes[0].sides))
 print("Area of rectangle is:", str(shapes[0].getArea()))
 
