@@ -1,11 +1,9 @@
-for _ in range(int(input())):
-    N = int(input())
-    a = N
-    while a>0:
-        for i in range(1,a+1):
-            if (i%5 == 0):
-                print("#", end=" ")
-            else:
-                print("*", end=" ")
-        print()        
-        a -= 1
+str = "@Debugging is being the detective in a criminal movie where you are also the murderer"
+list = str.split()
+for i in range(len(list)):
+    if "@" in list[i]:
+        print(len(list[i])-1,end=",")
+    elif (i == len(list)-1):
+        print(len(list[i]))
+    else:
+        print(len(list[i]),end=",")
