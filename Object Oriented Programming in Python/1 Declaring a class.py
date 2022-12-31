@@ -1,4 +1,4 @@
-class ClassName: # class keyword tells the compiler that we are creating a custom class.
+vclass ClassName: # class keyword tells the compiler that we are creating a custom class.
     pass # all the properties and methods will be defined in the class scope
 
 '''Naming Rules:
