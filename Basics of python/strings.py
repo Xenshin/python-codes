@@ -43,3 +43,14 @@ print(txt.expandtabs(8))
 # join()
 a = ['hello', 'this', 'is', 'an', 'example']
 print('#'.join(a))
+
+# partition()
+''' It will help when you want to return the specified text and the text before and after that string'''
+'''Q) return the substring before and after the specified substring'''
+
+txt = 'before text after'
+x = txt.partition('text')
+print(x[0].strip(),x[2].strip()) # using tuple comprehension to get the first and last element of the string
+# and using strip() function to clearoff the white spaces before and after that string
+
+
