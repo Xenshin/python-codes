@@ -39,3 +39,7 @@ print(a.count('a', 0 ,len(a))) # count(value, start, end)
 txt = "H\te\tl\tl\to"
 print(txt.expandtabs(8))
 
+
+# join()
+a = ['hello', 'this', 'is', 'an', 'example']
+print('#'.join(a))
