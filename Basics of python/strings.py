@@ -27,3 +27,7 @@ print(a.capitalize())
 a = 'Converts String Into Lower Case'
 print(a.casefold())
 
+# center()
+a = 'returns a centered string'
+print(a.center(40,'*')) # first argument is the length and second is type of character
+
