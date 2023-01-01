@@ -31,3 +31,11 @@ print(a.casefold())
 a = 'returns a centered string'
 print(a.center(40,'*')) # first argument is the length and second is type of character
 
+# count()
+a = 'Returns the number of times a specified value occurs in a string'
+print(a.count('a', 0 ,len(a))) # count(value, start, end)
+
+# expandtabs()
+txt = "H\te\tl\tl\to"
+print(txt.expandtabs(8))
+
