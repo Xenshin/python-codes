@@ -53,4 +53,5 @@ x = txt.partition('text')
 print(x[0].strip(),x[2].strip()) # using tuple comprehension to get the first and last element of the string
 # and using strip() function to clearoff the white spaces before and after that string
 
-
+# rfind() and rindex()
+''' this is used when you have to return the position of the string where it was found last'''
