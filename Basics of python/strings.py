@@ -9,3 +9,12 @@ print(a.strip())
 
 b = "Hello world!"
 print(b.split(" "))
+
+# Format specifier in string
+age = 36
+txt = "My name is Xenshin, and I am {}"
+print(txt.format(age))n
+
+# escape sequence
+b = "Hello\World!"
+print(b)
