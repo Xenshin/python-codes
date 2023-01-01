@@ -13,8 +13,17 @@ print(b.split(" "))
 # Format specifier in string
 age = 36
 txt = "My name is Xenshin, and I am {}"
-print(txt.format(age))n
+print(txt.format(age))
 
 # escape sequence
 b = "Hello\World!"
 print(b)
+
+#capitalize()
+a = 'Converts the first character to upper case'
+print(a.capitalize())
+
+# casefold()
+a = 'Converts String Into Lower Case'
+print(a.casefold())
+
