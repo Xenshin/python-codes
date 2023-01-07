@@ -77,5 +77,12 @@ for i in u:
 x = slice(3)
 print(a[x])
 
+# sorted()
+''' sorted(iterable, reverse)
+Ascending : reverse = False
+Descending : reverse = True'''
 
+a = (1, 11, 3)
+print(sorted(a, reverse=True))  # Descending
+print(sorted(a, reverse=False)) # Ascending
 
