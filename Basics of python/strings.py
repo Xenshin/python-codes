@@ -55,3 +55,27 @@ print(x[0].strip(),x[2].strip()) # using tuple comprehension to get the first an
 
 # rfind() and rindex()
 ''' this is used when you have to return the position of the string where it was found last'''
+
+# reversed()
+''' Reverses the sequence of a list, and print each item:'''
+alph = ['a', 'b', 'c', 'd']
+ralph = reversed(alph)
+for i in ralph:
+    print(i)
+
+# round()
+'Round a number to n decimals'
+print(round(5.243568, 3)) # n = 3
+
+# slice(n)
+'''create a tuple and a slice object. Use the slice object to get only the two first items of the tuple'''
+a = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+print(a[slice(4)]) # directly slicing 
+u = reversed(a[slice(6)]) # to reverse
+for i in u:
+    print(i)
+x = slice(3)
+print(a[x])
+
+
+
