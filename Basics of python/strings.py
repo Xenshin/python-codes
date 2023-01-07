@@ -86,3 +86,15 @@ a = (1, 11, 3)
 print(sorted(a, reverse=True))  # Descending
 print(sorted(a, reverse=False)) # Ascending
 
+# zip()
+'''returns a zip object, which is an iterator of tuples where the
+first itme in each passed iterator is paired together, and then the second item 
+in each passed iterator are paired together.
+
+syntax: zip(iterator1, iterator2,....)'''
+a = ("johny", "charles", "Mike")
+b = ("jenny", "Christy", "Monica")
+c = ("ben", "light", "milk")
+
+x = zip(a, b, c)
+print(tuple(x))
