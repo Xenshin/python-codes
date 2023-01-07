@@ -96,5 +96,6 @@ a = ("johny", "charles", "Mike")
 b = ("jenny", "Christy", "Monica")
 c = ("ben", "light", "milk")
 
-x = zip(a, b, c)
+x = zip(a, b,)
 print(tuple(x))
+
