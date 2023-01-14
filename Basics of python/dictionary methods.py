@@ -40,3 +40,10 @@ car["color"] = "white"
 print(x)
 
 
+# pop() method
+x = car.pop("model", "C series") #removes the element with specified key and returns its value
+print(x)
+
+# popitem() method
+car.popitem() # removes the last inserted key-value pair
+
