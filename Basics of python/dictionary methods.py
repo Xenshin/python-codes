@@ -31,3 +31,12 @@ print(x)
 
 # items() method
 print(car.items()) # returns a list containing a tuple for each key value pair
+
+
+#keys() method
+x = car.keys() # returns a list containing the dictionary's keys
+
+car["color"] = "white"
+print(x)
+
+
