@@ -47,3 +47,17 @@ print(x)
 # popitem() method
 car.popitem() # removes the last inserted key-value pair
 
+
+# setdefault() method
+'''this returns the value of the item with the specified key.
+If the key does not exist, insert the key, with the specified value. '''
+
+x = car.setdefault("model", "bronco")
+print(x)
+
+# update() method
+car.update({"color":"white"})
+print(car)
+
+# values() method
+print(car.values()) # returns the list of all the values of the dictionary
