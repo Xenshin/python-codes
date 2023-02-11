@@ -11,3 +11,19 @@ def fib(n):
         return fib(n-1) + fib(n-2)
 
 print(fib(6))
+
+
+
+
+#######################################################################################
+#######################################################################################
+
+
+def fibonacci(N):
+    a, b = 0, 1
+    for i in range(N):
+        print(a)
+        a, b = b, a+b
+
+n =  int(input("enter the number till which you want fibonacci sequence"))
+fibonacci(n)
