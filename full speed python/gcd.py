@@ -34,8 +34,8 @@ gcd_1(14,63)
 def gcd_2(m,n):
     for i in range(1, min(m,n)+1):
         if (m%i) == 0 and (n%i == 0):
-            mcrf = i
-    print(mcrf)
+            mcrf_value = i
+    print(mcrf_value)
 
 gcd_2(14,63)
 
