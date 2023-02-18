@@ -36,3 +36,13 @@ def gcd_2(m,n):
         print(n)
     else:
         print(gcd(n, m%n)) # m%n < n, always
+
+
+## Replacing recursion with while loop
+def gcd_3(m,n):
+    if m<n:
+        (m,n) = (n,m)
+    while (m%n) != 0:
+        (m, n) = (n, m%n) # m%n < n, always
+    
+    print(n)
